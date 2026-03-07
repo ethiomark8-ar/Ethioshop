@@ -29,6 +29,11 @@ jobs:
       - name: clear cache
         run: flutter clean
 
+
+      - name: major update
+        run: flutter pub upgrade --major-version
+
+ 
       - name: Install packages
         run: flutter pub get
       - name: Ensure Android folder exists
