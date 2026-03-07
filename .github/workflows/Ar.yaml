@@ -56,13 +56,13 @@ jobs:
         env:
           GIT_BRANCH: ${{ github.ref_name }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add android pubspec.lock
-          git add pubspec.yaml || true
+          git config --local user.email "ethiomark8@gmail.com"
+          git config --local user.name "ETHIO MARK8"
+          git add .
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             git commit -m "chore(ci): create android folder and upgrade dependencies"
             git push origin HEAD
           fi
+                
