@@ -1,15 +1,28 @@
-name: unzip
-
+name: Extract and Overwrite
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   workflow_dispatch:
+
 jobs:
+  extract_zip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: unzip
-        run:unzip -o full.zip
+      - name: Extract ZIP and overwrite
+        run: |
+          # 1. Unzip the file into the current directory
+          # -o: Overwrite existing files without prompting
+          # -d: Destination directory ( . means main directory)
+          unzip -o full.zip -d .
 
-
-  
-      - name: Install dependencies
-        run: flutter pub get
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Automated unzip and overwrite" || echo "No changes to commit"
+          git push
