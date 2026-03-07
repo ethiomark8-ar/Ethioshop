@@ -1,0 +1,201 @@
+{
+  "$schema": "https://idx.dev/config.schema.json",
+  "projectId": "ethioshop-flutter-marketplace",
+  "projectType": "flutter",
+  "displayName": "EthioShop - Ethiopia's Premier Marketplace",
+  "description": "Enterprise-grade e-commerce marketplace built with Flutter, featuring P2P multi-vendor platform, Firebase integration, and Ethiopian-specific features.",
+  "runtime": {
+    "version": "3.24.0",
+    "sdk": "flutter"
+  },
+  "extensions": [
+    "Dart-Code.flutter",
+    "Dart-Code.dart-code",
+    "eamodio.gitlens",
+    "ms-python.python",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+    "Gruntfuggly.todo-tree",
+    "pkief.material-icon-theme",
+    "yzhang.markdown-all-in-one"
+  ],
+  "tasks": {
+    "setup": {
+      "command": "flutter",
+      "args": ["pub", "get"],
+      "description": "Install Flutter dependencies",
+      "preview": {
+        "port": 8080
+      }
+    },
+    "run": {
+      "command": "flutter",
+      "args": ["run", "-d", "chrome"],
+      "description": "Run EthioShop in Chrome",
+      "preview": {
+        "port": 8080,
+        "browser": "chrome"
+      }
+    },
+    "run-android": {
+      "command": "flutter",
+      "args": ["run", "-d", "android"],
+      "description": "Run EthioShop on Android emulator"
+    },
+    "test": {
+      "command": "flutter",
+      "args": ["test", "--coverage"],
+      "description": "Run all tests with coverage"
+    },
+    "analyze": {
+      "command": "flutter",
+      "args": ["analyze", "--fatal-infos", "--fatal-warnings"],
+      "description": "Analyze code for issues"
+    },
+    "build-web": {
+      "command": "flutter",
+      "args": ["build", "web", "--release"],
+      "description": "Build web release"
+    },
+    "build-android": {
+      "command": "flutter",
+      "args": ["build", "apk", "--release"],
+      "description": "Build Android APK"
+    },
+    "clean": {
+      "command": "flutter",
+      "args": ["clean"],
+      "description": "Clean build artifacts"
+    }
+  },
+  "ports": {
+    "web": {
+      "label": "Web Application",
+      "port": 8080,
+      "onOpen": "open-preview"
+    },
+    "firebase-emulator": {
+      "label": "Firebase Emulator",
+      "port": 9099,
+      "onOpen": "ignore"
+    },
+    "android-debug": {
+      "label": "Android Debug Bridge",
+      "port": 5037,
+      "onOpen": "ignore"
+    }
+  },
+  "env": {
+    "ETHIOSHOP_ENV": "development",
+    "FIREBASE_PROJECT_ID": "ethioshop-production",
+    "FLUTTER_WEB_RENDERER": "canvaskit"
+  },
+  "readme": "README.md",
+  "icon": "https://raw.githubusercontent.com/flutter/flutter/master/dev/intellij_integration/resources/icons/flutter.png",
+  "features": {
+    "cloud": true,
+    "cloudRun": false,
+    "oauth": true,
+    "github": true,
+    "gitlab": false
+  },
+  "workspaces": [
+    {
+      "name": "Flutter App",
+      "path": "."
+    },
+    {
+      "name": "Tests",
+      "path": "test"
+    },
+    {
+      "name": "Web Assets",
+      "path": "web"
+    },
+    {
+      "name": "Resources",
+      "path": "assets"
+    }
+  ],
+  "fileAssociations": [
+    {
+      "language": "dart",
+      "filenames": ["*.dart"]
+    },
+    {
+      "language": "yaml",
+      "filenames": ["*.yaml", "*.yml"]
+    },
+    {
+      "language": "json",
+      "filenames": ["*.json"]
+    },
+    {
+      "language": "markdown",
+      "filenames": ["*.md"]
+    }
+  ],
+  "debugging": {
+    "configurations": [
+      {
+        "name": "Flutter",
+        "type": "dart",
+        "request": "launch",
+        "program": "lib/main.dart"
+      },
+      {
+        "name": "Flutter (Profile Mode)",
+        "type": "dart",
+        "request": "launch",
+        "program": "lib/main.dart",
+        "flutterMode": "profile"
+      },
+      {
+        "name": "Flutter (Release Mode)",
+        "type": "dart",
+        "request": "launch",
+        "program": "lib/main.dart",
+        "flutterMode": "release"
+      }
+    ]
+  },
+  "indexing": {
+    "enabled": true,
+    "include": [
+      "lib/**/*.dart",
+      "test/**/*.dart",
+      "web/**/*",
+      "assets/**/*"
+    ],
+    "exclude": [
+      "build/**",
+      ".dart_tool/**",
+      ".git/**",
+      "*.generated.dart"
+    ],
+    "workspaceSymbols": {
+      "enabled": true,
+      "forceRebuild": false
+    },
+    "fileIndexing": {
+      "enabled": true,
+      "ignoreHidden": true
+    }
+  },
+  "ai": {
+    "enabled": true,
+    "context": {
+      "codebase": true,
+      "documentation": true,
+      "dependencies": true
+    },
+    "suggestions": {
+      "enabled": true,
+      "codeCompletion": true,
+      "codeExplanation": true,
+      "bugDetection": true
+    }
+  }
+}

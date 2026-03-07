@@ -1,0 +1,63 @@
+# Docker ignore file for EthioShop
+
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# Environment
+.env
+.env.*
+firebase_options.dart
+google-services.json
+
+# Build artifacts
+*.apk
+*.app
+*.ipa
+*.aab
+*.ipa
+dSYM/
+
+# Test
+coverage/
+test/.test_coverage.dart
+
+# Documentation
+doc/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Nix
+flake.nix
+.flake/
+
+# Misc
+*.md
+!README.md

@@ -1,0 +1,195 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Coverage
+coverage/
+
+# Android
+android/**/gradle-wrapper.jar
+android/.gradle
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+android/key.properties
+*.jks
+*.keystore
+
+# iOS
+ios/.generated/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Flutter/flutter_export_environment.sh
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Web
+web/build/
+web/.flutter-plugins
+web/.flutter-plugins-dependencies
+
+# macOS
+macos/Flutter/ephemeral
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Flutter/Flutter-Generated.xcconfig
+macos/Flutter/flutter_export_environment.sh
+macos/Flutter/flutter_assets/
+macos/Flutter/ephemeral/
+
+# Linux
+linux/flutter/ephemeral
+
+# Windows
+windows/flutter/ephemeral
+
+# Hive (local storage)
+*.hive
+*.lock
+
+# Firebase
+firebase_options.dart.backup
+*.json.backup
+firebase-debug.log
+
+# Firebase Admin SDK (keep sensitive files)
+*-firebase-adminsdk-*.json
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+
+# Keys and secrets
+api_keys.dart
+secrets.dart
+config/secrets.dart
+*.pem
+*.key
+*.crt
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Assets
+assets/images/uploads/
+assets/temp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# IDE
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Test coverage
+coverage/lcov.info
+test_coverage/
+
+# Documentation
+doc/api/
+
+# Deployment
+.deploy/
+.vercel/
+.netlify/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules (if using Node for any tooling)
+node_modules/
+
+# Build outputs
+dist/
+out/
+release/
+
+# Nix
+result
+result-*
+.direnv/
+
+# Firebase Hosting
+.firebase/
+.firebaserc
+
+# App distribution
+*.aab
+*.apk
+*.ipa
+*.app
+
+# Reports
+reports/
+test-reports/

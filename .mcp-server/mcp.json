@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ethioshopTools": {
+      "command": "node",
+      "args": [
+        "/ethioshop/.mcp-server/build/index.js"
+      ]
+    }
+  }
+}

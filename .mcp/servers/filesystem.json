@@ -1,0 +1,84 @@
+{
+  "name": "ethioshop-filesystem",
+  "displayName": "EthioShop Filesystem",
+  "description": "Provides filesystem access for the EthioShop Flutter project, enabling AI tools to read, write, and analyze code files.",
+  "version": "1.0.0",
+  "enabled": true,
+  "type": "filesystem",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-filesystem",
+    "/workspace/ethioshop_merged"
+  ],
+  "capabilities": [
+    "read_file",
+    "write_file",
+    "list_directory",
+    "search_files",
+    "get_file_info",
+    "watch_files",
+    "create_directory",
+    "delete_file",
+    "move_file",
+    "copy_file"
+  ],
+  "settings": {
+    "rootPath": "/workspace/ethioshop_merged",
+    "excludes": [
+      "build/**",
+      ".dart_tool/**",
+      ".git/**",
+      ".firebase/**",
+      "node_modules/**",
+      "*.generated.dart",
+      "*.g.dart",
+      "*.freezed.dart",
+      "*.lock",
+      ".env*",
+      "firebase_options.dart"
+    ],
+    "includes": [
+      "lib/**/*.dart",
+      "test/**/*.dart",
+      "assets/**/*",
+      "web/**/*",
+      "pubspec.yaml",
+      "README.md",
+      "**/*.md"
+    ],
+    "maxFileSize": 10485760,
+    "enableWatching": true,
+    "watchDebounce": 1000,
+    "resolveSymlinks": true,
+    "followLinks": false
+  },
+  "context": {
+    "projectName": "EthioShop",
+    "projectType": "Flutter",
+    "language": "Dart",
+    "framework": "Flutter 3.24.0",
+    "architecture": "Clean Architecture",
+    "description": "Ethiopia's premier e-commerce marketplace with multi-vendor support, Firebase integration, and Ethiopian-specific features."
+  },
+  "permissions": {
+    "allowRead": true,
+    "allowWrite": true,
+    "allowDelete": false,
+    "allowCreate": true,
+    "allowSearch": true
+  },
+  "metadata": {
+    "author": "EthioShop Team",
+    "created": "2025-01-XX",
+    "lastModified": "2025-01-XX",
+    "tags": [
+      "flutter",
+      "dart",
+      "ecommerce",
+      "firebase",
+      "marketplace",
+      "ethiopia"
+    ]
+  }
+}

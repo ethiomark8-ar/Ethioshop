@@ -1,0 +1,233 @@
+{
+  "name": "ethioshop-firebase",
+  "displayName": "EthioShop Firebase Integration",
+  "description": "Provides Firebase service integration and configuration analysis for the EthioShop project, enabling AI tools to understand Firebase patterns and suggest improvements.",
+  "version": "1.0.0",
+  "enabled": true,
+  "type": "firebase",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-firebase",
+    "--project",
+    "ethioshop-production",
+    "--config",
+    "/workspace/ethioshop_merged"
+  ],
+  "capabilities": [
+    "analyze_firebase_config",
+    "analyze_security_rules",
+    "analyze_firestore_schema",
+    "analyze_authentication_flows",
+    "analyze_storage_rules",
+    "analyze_cloud_functions",
+    "analyze_messaging_config",
+    "analyze_hosting_config",
+    "analyze_performance_monitoring",
+    "analyze_analytics_config",
+    "validate_rules",
+    "suggest_optimizations",
+    "detect_security_issues",
+    "generate_best_practices"
+  ],
+  "settings": {
+    "projectPath": "/workspace/ethioshop_merged",
+    "firebaseConfigFile": "lib/core/config/firebase_options.dart",
+    "firestoreRulesFile": "firestore.rules",
+    "storageRulesFile": "storage.rules",
+    "functionsDirectory": "functions",
+    "hostingConfigFile": "firebase.json",
+    "projectId": "ethioshop-production",
+    "region": "europe-west1"
+  },
+  "services": {
+    "authentication": {
+      "enabled": true,
+      "providers": [
+        "email",
+        "phone",
+        "google",
+        "facebook"
+      ],
+      "features": [
+        "email_verification",
+        "phone_verification",
+        "social_login",
+        "password_reset",
+        "anonymous_user"
+      ],
+      "ethiopianSpecific": {
+        "phoneValidation": "+251",
+        "smsVerification": true
+      }
+    },
+    "firestore": {
+      "enabled": true,
+      "collections": [
+        "users",
+        "products",
+        "orders",
+        "chats",
+        "reviews",
+        "categories",
+        "notifications",
+        "sellers",
+        "payments",
+        "wishlists"
+      ],
+      "indexes": [
+        "users_by_region",
+        "products_by_category",
+        "products_by_price",
+        "orders_by_user",
+        "orders_by_seller",
+        "chats_by_participants"
+      ],
+      "offlineSupport": true,
+      "cacheStrategy": "persistent"
+    },
+    "storage": {
+      "enabled": true,
+      "buckets": [
+        "gs://ethioshop-production.appspot.com"
+      ],
+      "folders": [
+        "products",
+        "users",
+        "categories",
+        "documents",
+        "thumbnails"
+      ],
+      "allowedTypes": [
+        "image/jpeg",
+        "image/png",
+        "image/gif",
+        "image/webp"
+      ],
+      "maxFileSize": 5242880
+    },
+    "functions": {
+      "enabled": true,
+      "runtime": "nodejs18",
+      "region": "europe-west1",
+      "triggers": [
+        "onUserCreate",
+        "onOrderCreate",
+        "onPaymentSuccess",
+        "onChatMessage",
+        "onProductUpdate",
+        "onReviewSubmit"
+      ],
+      "httpFunctions": [
+        "api/webhook/chapa",
+        "api/admin/reports"
+      ]
+    },
+    "messaging": {
+      "enabled": true,
+      "topics": [
+        "all_users",
+        "sellers",
+        "buyers"
+      ],
+      "notificationTypes": [
+        "order_update",
+        "chat_message",
+        "promotion",
+        "system"
+      ]
+    },
+    "hosting": {
+      "enabled": true,
+      "site": "ethioshop",
+      "public": "build/web",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=1800"
+            }
+          ]
+        }
+      ]
+    },
+    "analytics": {
+      "enabled": true,
+      "measurementId": "G-XXXXXXXXXX",
+      "events": [
+        "product_view",
+        "add_to_cart",
+        "checkout",
+        "purchase",
+        "search"
+      ]
+    },
+    "performance": {
+      "enabled": true,
+      "collectionEnabled": true,
+      "networkRequestsEnabled": true,
+      "tracesEnabled": true
+    }
+  },
+  "securityRules": {
+    "authentication": {
+      "description": "Firestore and Storage security rules",
+      "principles": [
+        "User can only access their own data",
+        "Sellers can only manage their products",
+        "Admins have full access",
+        "Read access for public data",
+        "Write access requires authentication"
+      ]
+    },
+    "validation": {
+      "enabled": true,
+      "enforceSchema": true,
+      "validateTypes": true,
+      "validateRequiredFields": true
+    }
+  },
+  "ethiopianIntegration": {
+    "paymentGateway": "Chapa",
+    "currency": "ETB",
+    "regions": 13,
+    "cities": 16,
+    "phoneValidation": "+251",
+    "smsService": "Firebase Cloud Messaging"
+  },
+  "context": {
+    "projectName": "EthioShop",
+    "firebaseProject": "ethioshop-production",
+    "environment": "production",
+    "region": "europe-west1",
+    "description": "Firebase backend integration for Ethiopia's premier e-commerce marketplace"
+  },
+  "permissions": {
+    "allowReadConfig": true,
+    "allowAnalyzeRules": true,
+    "allowSuggestOptimizations": true,
+    "allowDetectIssues": true,
+    "allowWriteRules": false
+  },
+  "metadata": {
+    "author": "EthioShop Team",
+    "created": "2025-01-XX",
+    "lastModified": "2025-01-XX",
+    "tags": [
+      "firebase",
+      "backend",
+      "authentication",
+      "firestore",
+      "storage",
+      "functions"
+    ]
+  }
+}

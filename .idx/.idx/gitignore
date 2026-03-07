@@ -1,0 +1,58 @@
+# IDX-specific ignore rules
+# These files are ignored by Firebase Studio indexing
+
+# Build artifacts
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firebase-debug.*.log
+firestore-debug.log
+ui-debug.log
+functions/node_modules/
+
+# Generated files
+*.generated.dart
+*.g.dart
+*.freezed.dart
+
+# Test coverage
+coverage/
+.test_coverage.dart
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Large files
+*.apk
+*.aab
+*.ipa
+*.app
