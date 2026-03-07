@@ -26,11 +26,14 @@ jobs:
         with:
           flutter-version: "3.24.3"
 
+
+      - name: Install packages
+        run: flutter pub get
       - name: Ensure Android folder exists
         run: |
           if [ ! -d android ]; then
             echo "android/ missing — creating Android support with flutter create"
-            flutter create --platforms=android .
+            flutter create --project-name=ethioshop --platforms=android .
           else
             echo "android/ already exists"
           fi
