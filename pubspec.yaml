@@ -44,7 +44,7 @@ dependencies:
 
   # Form Management
   reactive_forms: ^16.1.2
-  intl_phone_number_input: ^0.8.0
+  intl_phone_number_input: ^0.7.4  # Fixed version – 0.8.0 does not exist
 
   # Media Handling
   image_picker: ^1.1.2
