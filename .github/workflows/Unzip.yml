@@ -1,22 +1,40 @@
-name: Extract and Overwrite
+name: Extract and Overwrite Main Directory
+
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    paths:
+      - 'full.zip' # Triggers only when full.zip is updated
+  workflow_dispatch: # Allows you to run this manually from the Actions tab
 
 jobs:
-  extract_zip:
+  unzip-process:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push changes back to the repo
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Extract ZIP and overwrite
+      - name: Unzip and Overwrite
         run: |
+          # -o: Overwrite existing files without prompting
+          # -d .: Extract to the current (root) directory
           unzip -o full.zip -d .
+          
+          # Optional: Remove the zip after extraction to keep repo clean
+          # rm full.zip
 
-      - name: Commit and push changes
+      - name: Commit and Push changes
         run: |
-          git commit -m "Automated unzip and overwrite" || echo "No changes to commit"
-          git push
+          git config --local user.email "ethiomark8@gmail.com"
+          git config --local user.name "ETHIO MARK8"
+          git add .
+          
+          # Only commit if there are actual changes to avoid workflow errors
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-extract full.zip and update repository"
+            git push
+          fi
