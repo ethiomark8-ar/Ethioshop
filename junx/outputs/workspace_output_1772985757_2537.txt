@@ -1,0 +1,18 @@
+=== Build Gradle Check ===
+    namespace "com.ethio.shop"
+        applicationId "com.ethio.shop"
+
+=== AndroidManifest Check ===
+    package="com.ethio.shop">
+
+=== MainActivity Check ===
+package com.ethio.shop
+
+=== Google Services Package ===
+          "package_name": "com.ethio.shop"
+        }
+      },
+--
+            "package_name": "com.ethio.shop",
+            "certificate_hash": "d6b81379c1259eadbdae595d50c00f5758d385b0"
+          }

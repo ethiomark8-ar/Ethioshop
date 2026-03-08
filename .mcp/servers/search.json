@@ -10,7 +10,7 @@
     "-y",
     "@modelcontextprotocol/server-search",
     "--root",
-    "/workspace/ethioshop_merged"
+    "."
   ],
   "capabilities": [
     "full_text_search",
@@ -27,7 +27,7 @@
     "ripgrep_search"
   ],
   "settings": {
-    "rootPath": "/workspace/ethioshop_merged",
+    "rootPath": ".",
     "excludes": [
       "build/**",
       ".dart_tool/**",

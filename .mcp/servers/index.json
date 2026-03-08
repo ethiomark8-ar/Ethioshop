@@ -10,7 +10,7 @@
     "-y",
     "@modelcontextprotocol/server-index",
     "--root",
-    "/workspace/ethioshop_merged"
+    "."
   ],
   "capabilities": [
     "unified_search",
@@ -26,7 +26,7 @@
     "knowledge_graph"
   ],
   "settings": {
-    "rootPath": "/workspace/ethioshop_merged",
+    "rootPath": ".",
     "indexAll": true,
     "realTimeIndexing": true,
     "incrementalUpdates": true,
@@ -84,7 +84,7 @@
     "status": "Production Ready",
     "completion": 95,
     "description": "Ethiopia's premier e-commerce marketplace with multi-vendor support, Firebase integration, and Ethiopian-specific features.",
-    "location": "/workspace/ethioshop_merged"
+    "location": "."
   },
   "projectStructure": {
     "totalFiles": 139,

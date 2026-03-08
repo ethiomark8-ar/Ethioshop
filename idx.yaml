@@ -1,0 +1,74 @@
+# Project IDX Configuration for EthioShop
+# This file configures the development environment for Google Project IDX
+
+project:
+  name: EthioShop
+  description: Enterprise-grade Ethiopian e-commerce marketplace
+  type: flutter
+  version: 1.0.0
+
+# Development environment
+environment:
+  flutter: "3.24.0"
+  dart: ">=3.4.0 <4.0.0"
+  java: "17"
+  node: "20"
+
+# Build configuration
+build:
+  android:
+    enabled: true
+    minSdk: 21
+    targetSdk: 34
+  web:
+    enabled: true
+  ios:
+    enabled: false
+
+# Run configurations
+run:
+  debug:
+    command: flutter run --debug
+  release:
+    command: flutter run --release
+  web:
+    command: flutter run -d web-server --web-port $PORT --web-hostname 0.0.0.0
+
+# Test configuration
+test:
+  unit:
+    command: flutter test
+  integration:
+    command: flutter test integration_test
+
+# Code quality
+lint:
+  command: flutter analyze
+  fix:
+    command: dart fix --apply
+
+# Dependencies
+dependencies:
+  get:
+    command: flutter pub get
+  upgrade:
+    command: flutter pub upgrade
+
+# Firebase
+firebase:
+  project: ethioshop-18181
+  features:
+    - auth
+    - firestore
+    - storage
+    - messaging
+
+# Git configuration
+git:
+  ignore:
+    - .env
+    - firebase_options.dart
+    - google-services.json
+    - GoogleService-Info.plist
+    - keystore.jks
+    - key.properties

@@ -10,7 +10,7 @@
     "-y",
     "@modelcontextprotocol/server-git",
     "--repository",
-    "/workspace/ethioshop_merged"
+    "."
   ],
   "capabilities": [
     "get_commit_history",
@@ -27,7 +27,7 @@
     "get_remote_info"
   ],
   "settings": {
-    "repositoryPath": "/workspace/ethioshop_merged",
+    "repositoryPath": ".",
     "maxCommitHistory": 100,
     "maxDiffSize": 524288,
     "includeMergeCommits": true,

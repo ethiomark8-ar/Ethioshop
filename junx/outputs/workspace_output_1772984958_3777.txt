@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1009602861548",
+    "project_id": "ethioshop-18181",
+    "storage_bucket": "ethioshop-18181.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009602861548:android:1694ae6baa0ef10ce608c9",
+        "android_client_info": {
+          "package_name": "com.ethio.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009602861548-p0nsst634icr0afdne77cbaj6ejo38h8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ethio.shop",
+            "certificate_hash": "d6b81379c1259eadbdae595d50c00f5758d385b0"
+          }
+        },
+        {
+          "client_id": "1009602861548-14njia0hvdtm5q28undoe4vnc36jh4nd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBylWc9FRK7oP_0r9M7xXkG4ukpyY5MpQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009602861548-14njia0hvdtm5q28undoe4vnc36jh4nd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

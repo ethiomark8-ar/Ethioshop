@@ -9,7 +9,7 @@
   "args": [
     "-y",
     "@modelcontextprotocol/server-filesystem",
-    "/workspace/ethioshop_merged"
+    "."
   ],
   "capabilities": [
     "read_file",
@@ -24,7 +24,7 @@
     "copy_file"
   ],
   "settings": {
-    "rootPath": "/workspace/ethioshop_merged",
+    "rootPath": ".",
     "excludes": [
       "build/**",
       ".dart_tool/**",

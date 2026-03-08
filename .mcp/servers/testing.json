@@ -10,7 +10,7 @@
     "-y",
     "@modelcontextprotocol/server-testing",
     "--project",
-    "/workspace/ethioshop_merged"
+    "."
   ],
   "capabilities": [
     "analyze_test_coverage",
@@ -28,7 +28,7 @@
     "recommend_test_strategies"
   ],
   "settings": {
-    "projectPath": "/workspace/ethioshop_merged",
+    "projectPath": ".",
     "testDirectory": "test",
     "testConfigFile": "test/test_config.dart",
     "coverageDirectory": "coverage",

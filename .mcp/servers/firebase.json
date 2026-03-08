@@ -12,7 +12,7 @@
     "--project",
     "ethioshop-production",
     "--config",
-    "/workspace/ethioshop_merged"
+    "."
   ],
   "capabilities": [
     "analyze_firebase_config",
@@ -31,7 +31,7 @@
     "generate_best_practices"
   ],
   "settings": {
-    "projectPath": "/workspace/ethioshop_merged",
+    "projectPath": ".",
     "firebaseConfigFile": "lib/core/config/firebase_options.dart",
     "firestoreRulesFile": "firestore.rules",
     "storageRulesFile": "storage.rules",

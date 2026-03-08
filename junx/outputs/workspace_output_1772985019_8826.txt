@@ -1,0 +1,4 @@
+total 12
+drwxrwx--- 3 root root 4096 Mar  8 06:43 .
+drwxrwx--- 3 root root 4096 Mar  8 06:43 ..
+drwxrwx--- 4 root root 4096 Mar  8 06:43 ethioshop

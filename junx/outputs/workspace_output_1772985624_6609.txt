@@ -1,0 +1,289 @@
+{
+  "name": "ethioshop-filesystem",
+  "displayName": "EthioShop Filesystem",
+  "description": "Provides filesystem access for the EthioShop Flutter project, enabling AI tools to read, write, and analyze code files.",
+  "version": "1.0.0",
+  "enabled": true,
+  "type": "filesystem",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-filesystem",
+    "/workspace/ethioshop_merged"
+  ],
+  "capabilities": [
+    "read_file",
+    "write_file",
+    "list_directory",
+    "search_files",
+    "get_file_info",
+    "watch_files",
+    "create_directory",
+    "delete_file",
+    "move_file",
+    "copy_file"
+  ],
+  "settings": {
+    "rootPath": "/workspace/ethioshop_merged",
+    "excludes": [
+      "build/**",
+      ".dart_tool/**",
+      ".git/**",
+      ".firebase/**",
+      "node_modules/**",
+      "*.generated.dart",
+      "*.g.dart",
+      "*.freezed.dart",
+      "*.lock",
+      ".env*",
+      "firebase_options.dart"
+    ],
+    "includes": [
+      "lib/**/*.dart",
+      "test/**/*.dart",
+      "assets/**/*",
+      "web/**/*",
+      "pubspec.yaml",
+      "README.md",
+      "**/*.md"
+    ],
+    "maxFileSize": 10485760,
+    "enableWatching": true,
+    "watchDebounce": 1000,
+    "resolveSymlinks": true,
+    "followLinks": false
+  },
+  "context": {
+    "projectName": "EthioShop",
+    "projectType": "Flutter",
+    "language": "Dart",
+    "framework": "Flutter 3.24.0",
+    "architecture": "Clean Architecture",
+    "description": "Ethiopia's premier e-commerce marketplace with multi-vendor support, Firebase integration, and Ethiopian-specific features."
+  },
+  "permissions": {
+    "allowRead": true,
+    "allowWrite": true,
+    "allowDelete": false,
+    "allowCreate": true,
+    "allowSearch": true
+  },
+  "metadata": {
+    "author": "EthioShop Team",
+    "created": "2025-01-XX",
+    "lastModified": "2025-01-XX",
+    "tags": [
+      "flutter",
+      "dart",
+      "ecommerce",
+      "firebase",
+      "marketplace",
+      "ethiopia"
+    ]
+  }
+}---
+{
+  "name": "ethioshop-dart",
+  "displayName": "EthioShop Dart/Flutter Analysis",
+  "description": "Provides Dart language analysis and Flutter-specific code understanding for the EthioShop project, enabling AI tools to understand Flutter patterns and widget relationships.",
+  "version": "1.0.0",
+  "enabled": true,
+  "type": "language",
+  "language": "dart",
+  "framework": "flutter",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-dart",
+    "--project",
+    "/workspace/ethioshop_merged"
+  ],
+  "capabilities": [
+    "code_analysis",
+    "symbol_resolution",
+    "widget_tree_analysis",
+    "dependency_graph",
+    "import_analysis",
+    "state_management_analysis",
+    "navigation_analysis",
+    "theme_analysis",
+    "lifecycle_analysis",
+    "performance_analysis",
+    "best_practices_check",
+    "code_completion",
+    "refactoring_suggestions",
+    "code_documentation"
+  ],
+  "settings": {
+    "projectPath": "/workspace/ethioshop_merged",
+    "dartSdkPath": "/usr/lib/dart",
+    "flutterSdkPath": "/usr/lib/flutter",
+    "analysisOptions": "analysis_options.yaml",
+    "pubspecFile": "pubspec.yaml",
+    "entryPoint": "lib/main.dart",
+    "excludePatterns": [
+      "build/**",
+      ".dart_tool/**",
+      "*.generated.dart",
+      "*.g.dart",
+      "*.freezed.dart"
+    ],
+    "analysis": {
+      "enabled": true,
+      "realTime": true,
+      "lints": true,
+      "hints": true,
+      "warnings": true,
+      "errors": true,
+      "performanceHints": true,
+      "flutterSpecific": true
+    },
+    "widgetAnalysis": {
+      "enabled": true,
+      "trackWidgetTree": true,
+      "trackStateChanges": true,
+      "trackLifecycle": true,
+      "detectRebuilds": true,
+      "detectUnnecessaryRebuilds": true
+    },
+    "stateManagement": {
+      "provider": "riverpod",
+      "trackProviders": true,
+      "trackStateChanges": true,
+      "trackDependencies": true,
+      "analyzeRebuilds": true
+    },
+    "navigation": {
+      "router": "go_router",
+      "trackRoutes": true,
+      "analyzeNavigation": true,
+      "detectDeepLinks": true
+    }
+  },
+  "architecture": {
+    "type": "Clean Architecture",
+    "layers": [
+      {
+        "name": "presentation",
+        "path": "lib/presentation",
+        "description": "UI layer with screens, widgets, and providers"
+      },
+      {
+        "name": "domain",
+        "path": "lib/domain",
+        "description": "Business logic layer with entities and use cases"
+      },
+      {
+        "name": "data",
+        "path": "lib/data",
+        "description": "Data layer with models, repositories, and datasources"
+      },
+      {
+        "name": "core",
+        "path": "lib/core",
+        "description": "Core functionality with constants, theme, and utilities"
+      }
+    ],
+    "patterns": [
+      "Repository Pattern",
+      "Provider Pattern",
+      "Dependency Injection",
+      "Single Source of Truth",
+      "Separation of Concerns"
+    ]
+  },
+  "flutterSpecifics": {
+    "version": "3.24.0",
+    "materialVersion": "Material 3",
+    "renderers": [
+      "canvaskit",
+      "html"
+    ],
+    "platforms": [
+      "android",
+      "ios",
+      "web",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "widgets": {
+      "stateless": true,
+      "stateful": true,
+      "inherited": true,
+      "consumer": true,
+      "builder": true
+    },
+    "stateManagement": {
+      "library": "Riverpod",
+      "version": "2.5.0",
+      "providers": 9,
+      "notifiers": true
+    },
+    "navigation": {
+      "library": "Go Router",
+      "version": "14.0.0",
+      "routes": 25,
+      "guards": true
+    },
+    "dependencyInjection": {
+      "library": "Riverpod",
+      "providers": true,
+      "scope": true
+    }
+  },
+  "codeQuality": {
+    "enabled": true,
+    "lints": [
+      "prefer_const_constructors",
+      "prefer_const_literals_to_create_immutables",
+      "avoid_print",
+      "prefer_single_quotes",
+      "sort_constructors_first",
+      "always_declare_return_types"
+    ],
+    "maxLineLength": 120,
+    "maxFileLength": 500,
+    "maxFunctionLength": 50,
+    "complexityThreshold": 10
+  },
+  "performance": {
+    "enabled": true,
+    "detectExpensiveBuilds": true,
+    "detectUnnecessaryRebuilds": true,
+    "detectLargeWidgets": true,
+    "detectDeepWidgetTrees": true,
+    "suggestOptimizations": true
+  },
+  "context": {
+    "projectName": "EthioShop",
+    "description": "Ethiopia's premier e-commerce marketplace",
+    "language": "Dart 3.5.0",
+    "framework": "Flutter 3.24.0",
+    "architecture": "Clean Architecture",
+    "patterns": ["Repository", "Provider", "Dependency Injection"],
+    "stateManagement": "Riverpod 2.5+",
+    "navigation": "Go Router 14+",
+    "backend": "Firebase",
+    "localStorage": "Hive 2.2+",
+    "payment": "Chapa (Ethiopian)",
+    "currency": "ETB"
+  },
+  "permissions": {
+    "allowAnalysis": true,
+    "allowCompletion": true,
+    "allowRefactoring": true,
+    "allowDocumentation": true
+  },
+  "metadata": {
+    "author": "EthioShop Team",
+    "created": "2025-01-XX",
+    "lastModified": "2025-01-XX",
+    "tags": [
+      "dart",
+      "flutter",
+      "language-analysis",
+      "code-analysis"
+    ]
+  }
+}

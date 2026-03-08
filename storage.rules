@@ -1,0 +1,127 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // ==========================================
+    // HELPER FUNCTIONS
+    // ==========================================
+    
+    // Check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    // Check if user is admin
+    function isAdmin() {
+      return isAuthenticated() && firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Check file size (max 5MB for images)
+    function isValidImageSize() {
+      return request.resource.size < 5 * 1024 * 1024;
+    }
+    
+    // Check if file is an image
+    function isImage() {
+      return request.resource.contentType.matches('image/.*');
+    }
+    
+    // ==========================================
+    // PRODUCT IMAGES
+    // ==========================================
+    match /products/{productId}/{imageId} {
+      // Everyone can read product images
+      allow read: if true;
+      
+      // Sellers can upload images to their products
+      // Product ownership verified in Firestore
+      allow write: if isAuthenticated() && isValidImageSize() && isImage();
+    }
+    
+    // ==========================================
+    // USER PROFILES
+    // ==========================================
+    match /users/{userId}/{imageId} {
+      // Users can read their own profile images
+      // Everyone can read profile images
+      allow read: if true;
+      
+      // Users can upload their own profile image
+      allow write: if isAuthenticated() && 
+        request.auth.uid == userId &&
+        isValidImageSize() && 
+        isImage();
+    }
+    
+    // ==========================================
+    // SELLER DOCUMENTS
+    // ==========================================
+    match /sellers/{sellerId}/{documentId} {
+      // Everyone can read seller documents
+      allow read: if true;
+      
+      // Sellers can upload their own documents
+      allow write: if isAuthenticated() && 
+        request.auth.uid == sellerId;
+    }
+    
+    // ==========================================
+    // CATEGORIES
+    // ==========================================
+    match /categories/{categoryId}/{imageId} {
+      // Everyone can read category images
+      allow read: if true;
+      
+      // Only admins can upload category images
+      allow write: if isAdmin() && isValidImageSize() && isImage();
+    }
+    
+    // ==========================================
+    // ORDERS
+    // ==========================================
+    match /orders/{orderId}/{documentId} {
+      // Users can read their own order documents
+      // Sellers can read documents for their orders
+      allow read: if isAuthenticated();
+      
+      // Users can upload documents for their orders
+      allow write: if isAuthenticated();
+    }
+    
+    // ==========================================
+    // CHAT MEDIA
+    // ==========================================
+    match /chats/{chatId}/{messageId} {
+      // Chat participants can read media
+      allow read: if isAuthenticated();
+      
+      // Chat participants can upload media
+      allow write: if isAuthenticated() && 
+        (isImage() || request.resource.contentType.matches('video/.*')) &&
+        request.resource.size < 10 * 1024 * 1024;
+    }
+    
+    // ==========================================
+    // REVIEWS
+    // ==========================================
+    match /reviews/{reviewId}/{imageId} {
+      // Everyone can read review images
+      allow read: if true;
+      
+      // Authenticated users can upload review images
+      allow write: if isAuthenticated() && isValidImageSize() && isImage();
+    }
+    
+    // ==========================================
+    // TEMP UPLOADS
+    // ==========================================
+    match /temp/{userId}/{fileId} {
+      // Users can read their own temp files
+      allow read: if isAuthenticated() && request.auth.uid == userId;
+      
+      // Users can upload temp files
+      allow write: if isAuthenticated() && 
+        request.auth.uid == userId &&
+        request.resource.size < 10 * 1024 * 1024;
+    }
+  }
+}

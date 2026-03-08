@@ -1,0 +1,29 @@
+=== GitHub Workflows ===
+total 16
+drwxr-xr-x 2 root root 4096 Mar  8 15:59 .
+drwxr-xr-x 3 root root 4096 Mar  8 15:56 ..
+-rw-r--r-- 1 root root 4012 Mar  8 15:58 build.yml
+-rw-r--r-- 1 root root 3002 Mar  8 15:59 release.yml
+
+=== IDX Configuration ===
+total 12
+drwxr-xr-x  2 root root 4096 Mar  8 16:00 .
+drwxr-xr-x 13 user user 4096 Mar  8 16:02 ..
+-rw-r--r--  1 root root 1977 Mar  8 16:00 configuration.json
+
+=== MCP Servers ===
+total 60
+drwxrwx--- 2 root root 4096 Mar  8 16:01 .
+drwxr-xr-x 3 root root 4096 Mar  8 15:49 ..
+-rwxrwx--- 1 root root 5116 Mar  8 16:01 dart.json
+-rwxrwx--- 1 root root 7463 Mar  8 16:01 documentation.json
+-rwxrwx--- 1 root root 1925 Mar  8 16:01 filesystem.json
+-rwxrwx--- 1 root root 5527 Mar  8 16:01 firebase.json
+-rwxrwx--- 1 root root 2515 Mar  8 16:01 git.json
+-rwxrwx--- 1 root root 8078 Mar  8 16:01 index.json
+-rwxrwx--- 1 root root 4084 Mar  8 16:01 search.json
+-rwxrwx--- 1 root root 6184 Mar  8 16:01 testing.json
+
+=== Root Config Files ===
+-rw-r--r-- 1 root root 2477 Mar  8 15:59 dev.nix
+-rw-r--r-- 1 root root 1303 Mar  8 16:02 idx.yaml

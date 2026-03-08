@@ -1,0 +1,358 @@
+Archive:  git.zip
+  inflating: image/logo.png          
+   creating: image/adaptive_icons/
+  inflating: image/adaptive_icons/ic_launcher.xml  
+  inflating: image/adaptive_icons/ic_launcher_foreground_xxhdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_foreground_hdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_foreground_xxxhdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_foreground_mdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_foreground_xhdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_background_hdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_background_xhdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_background_xxhdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_background_mdpi.png  
+  inflating: image/adaptive_icons/ic_launcher_background_xxxhdpi.png  
+   creating: image/launcher_icons/
+  inflating: image/launcher_icons/ic_launcher_xxhdpi.png  
+  inflating: image/launcher_icons/ic_launcher_xxxhdpi.png  
+  inflating: image/launcher_icons/ic_launcher_play.png  
+  inflating: image/launcher_icons/ic_launcher_hdpi.png  
+  inflating: image/launcher_icons/ic_launcher_mdpi.png  
+  inflating: image/launcher_icons/ic_launcher_xhdpi.png  
+  inflating: lib/main.dart           
+  inflating: lib/firebase_options.dart  
+   creating: lib/presentation/
+   creating: lib/presentation/providers/
+  inflating: lib/presentation/providers/notification_provider.dart  
+  inflating: lib/presentation/providers/cart_provider.dart  
+  inflating: lib/presentation/providers/chat_provider.dart  
+  inflating: lib/presentation/providers/wishlist_provider.dart  
+  inflating: lib/presentation/providers/order_provider.dart  
+  inflating: lib/presentation/providers/theme_provider.dart  
+  inflating: lib/presentation/providers/review_provider.dart  
+  inflating: lib/presentation/providers/auth_provider.dart  
+  inflating: lib/presentation/providers/product_provider.dart  
+   creating: lib/presentation/widgets/
+  inflating: lib/presentation/widgets/loading_widget.dart  
+  inflating: lib/presentation/widgets/empty_state_widget.dart  
+  inflating: lib/presentation/widgets/error_widget.dart  
+  inflating: lib/presentation/widgets/product_card.dart  
+  inflating: lib/presentation/widgets/custom_app_bar.dart  
+   creating: lib/presentation/screens/
+   creating: lib/presentation/screens/cart/
+  inflating: lib/presentation/screens/cart/cart_screen.dart  
+   creating: lib/presentation/screens/onboarding/
+  inflating: lib/presentation/screens/onboarding/onboarding_screen.dart  
+   creating: lib/presentation/screens/profile/
+  inflating: lib/presentation/screens/profile/address_book_screen.dart  
+  inflating: lib/presentation/screens/profile/edit_profile_screen.dart  
+  inflating: lib/presentation/screens/profile/profile_screen.dart  
+   creating: lib/presentation/screens/checkout/
+  inflating: lib/presentation/screens/checkout/checkout_screen.dart  
+  inflating: lib/presentation/screens/checkout/payment_screen.dart  
+   creating: lib/presentation/screens/wishlist/
+  inflating: lib/presentation/screens/wishlist/wishlist_screen.dart  
+   creating: lib/presentation/screens/home/
+  inflating: lib/presentation/screens/home/home_screen.dart  
+   creating: lib/presentation/screens/notifications/
+  inflating: lib/presentation/screens/notifications/notifications_screen.dart  
+   creating: lib/presentation/screens/orders/
+  inflating: lib/presentation/screens/orders/order_tracking_screen.dart  
+  inflating: lib/presentation/screens/orders/order_history_screen.dart  
+  inflating: lib/presentation/screens/orders/order_detail_screen.dart  
+   creating: lib/presentation/screens/search/
+  inflating: lib/presentation/screens/search/search_screen.dart  
+   creating: lib/presentation/screens/auth/
+  inflating: lib/presentation/screens/auth/register_screen.dart  
+  inflating: lib/presentation/screens/auth/forgot_password_screen.dart  
+  inflating: lib/presentation/screens/auth/login_screen.dart  
+   creating: lib/presentation/screens/review/
+  inflating: lib/presentation/screens/review/write_review_screen.dart  
+  inflating: lib/presentation/screens/review/reviews_screen.dart  
+   creating: lib/presentation/screens/chat/
+  inflating: lib/presentation/screens/chat/chat_list_screen.dart  
+  inflating: lib/presentation/screens/chat/chat_detail_screen.dart  
+   creating: lib/presentation/screens/seller/
+  inflating: lib/presentation/screens/seller/seller_dashboard_screen.dart  
+  inflating: lib/presentation/screens/seller/seller_products_screen.dart  
+  inflating: lib/presentation/screens/seller/seller_orders_screen.dart  
+  inflating: lib/presentation/screens/seller/create_product_screen.dart  
+   creating: lib/presentation/screens/admin/
+  inflating: lib/presentation/screens/admin/admin_orders_screen.dart  
+  inflating: lib/presentation/screens/admin/admin_products_screen.dart  
+  inflating: lib/presentation/screens/admin/admin_users_screen.dart  
+  inflating: lib/presentation/screens/admin/admin_dashboard_screen.dart  
+   creating: lib/presentation/screens/splash/
+  inflating: lib/presentation/screens/splash/splash_screen.dart  
+   creating: lib/presentation/screens/product/
+  inflating: lib/presentation/screens/product/product_detail_screen.dart  
+   creating: lib/domain/
+   creating: lib/domain/entities/
+  inflating: lib/domain/entities/notification_entity.dart  
+  inflating: lib/domain/entities/review_entity.dart  
+  inflating: lib/domain/entities/cart_item_entity.dart  
+  inflating: lib/domain/entities/user_entity.dart  
+  inflating: lib/domain/entities/order_entity.dart  
+  inflating: lib/domain/entities/message_entity.dart  
+  inflating: lib/domain/entities/product_entity.dart  
+  inflating: lib/domain/entities/chat_entity.dart  
+   creating: lib/domain/failures/
+  inflating: lib/domain/failures/failure.dart  
+   creating: lib/domain/repositories/
+  inflating: lib/domain/repositories/notification_repository.dart  
+  inflating: lib/domain/repositories/auth_repository.dart  
+  inflating: lib/domain/repositories/order_repository.dart  
+  inflating: lib/domain/repositories/wishlist_repository.dart  
+  inflating: lib/domain/repositories/product_repository.dart  
+  inflating: lib/domain/repositories/cart_repository.dart  
+  inflating: lib/domain/repositories/review_repository.dart  
+  inflating: lib/domain/repositories/chat_repository.dart  
+  inflating: lib/domain/repositories/payment_repository.dart  
+   creating: lib/domain/usecases/
+   creating: lib/domain/usecases/auth/
+  inflating: lib/domain/usecases/auth/sign_in_usecase.dart  
+  inflating: lib/domain/usecases/auth/register_usecase.dart  
+  inflating: lib/domain/usecases/auth/get_current_user_usecase.dart  
+  inflating: lib/domain/usecases/auth/sign_in_with_google_usecase.dart  
+  inflating: lib/domain/usecases/auth/sign_out_usecase.dart  
+   creating: lib/domain/usecases/cart/
+  inflating: lib/domain/usecases/cart/add_to_cart_usecase.dart  
+  inflating: lib/domain/usecases/cart/update_cart_quantity_usecase.dart  
+  inflating: lib/domain/usecases/cart/get_cart_usecase.dart  
+   creating: lib/domain/usecases/payment/
+  inflating: lib/domain/usecases/payment/create_payment_intent_usecase.dart  
+   creating: lib/domain/usecases/products/
+  inflating: lib/domain/usecases/products/get_products_usecase.dart  
+   creating: lib/domain/usecases/orders/
+  inflating: lib/domain/usecases/orders/place_order_usecase.dart  
+   creating: lib/data/
+   creating: lib/data/models/
+  inflating: lib/data/models/payment_model.dart  
+  inflating: lib/data/models/order_model.dart  
+  inflating: lib/data/models/product_model.dart  
+  inflating: lib/data/models/review_model.dart  
+  inflating: lib/data/models/message_model.dart  
+  inflating: lib/data/models/user_model.dart  
+   creating: lib/data/repositories/
+  inflating: lib/data/repositories/cart_repository_impl.dart  
+  inflating: lib/data/repositories/product_repository_impl.dart  
+  inflating: lib/data/repositories/order_repository_impl.dart  
+  inflating: lib/data/repositories/chat_repository_impl.dart  
+  inflating: lib/data/repositories/wishlist_repository_impl.dart  
+  inflating: lib/data/repositories/payment_repository_impl.dart  
+  inflating: lib/data/repositories/review_repository_impl.dart  
+  inflating: lib/data/repositories/auth_repository_impl.dart  
+   creating: lib/data/datasources/
+  inflating: lib/data/datasources/user_firestore_datasource.dart  
+  inflating: lib/data/datasources/product_firestore_datasource.dart  
+  inflating: lib/data/datasources/firebase_auth_datasource.dart  
+   creating: lib/data/datasources/firebase/
+  inflating: lib/data/datasources/firebase/chat_firebase_datasource.dart  
+  inflating: lib/data/datasources/firebase/payment_firebase_datasource.dart  
+  inflating: lib/data/datasources/firebase/order_firebase_datasource.dart  
+  inflating: lib/data/datasources/firebase/review_firebase_datasource.dart  
+   creating: lib/data/datasources/local/
+  inflating: lib/data/datasources/local/cart_local_datasource.dart  
+   creating: lib/core/
+   creating: lib/core/constants/
+  inflating: lib/core/constants/app_constants.dart  
+  inflating: lib/core/constants/api_constants.dart  
+   creating: lib/core/theme/
+  inflating: lib/core/theme/app_spacing.dart  
+  inflating: lib/core/theme/app_text_theme.dart  
+  inflating: lib/core/theme/app_theme.dart  
+  inflating: lib/core/theme/app_colors.dart  
+   creating: lib/core/router/
+  inflating: lib/core/router/app_router.dart  
+   creating: lib/core/config/
+  inflating: lib/core/config/firebase_options.dart  
+   creating: lib/core/error/
+  inflating: lib/core/error/failures.dart  
+  inflating: android/local.properties  
+  inflating: android/ethioshop_merged_android.iml  
+  inflating: android/gradle.properties  
+  inflating: android/gradlew         
+  inflating: android/build.gradle    
+  inflating: android/.gitignore      
+  inflating: android/settings.gradle  
+  inflating: android/gradlew.bat     
+   creating: android/app/
+  inflating: android/app/proguard-rules.pro  
+  inflating: android/app/build.gradle  
+  inflating: android/app/google-services.json  
+   creating: android/app/src/
+   creating: android/app/src/main/
+  inflating: android/app/src/main/AndroidManifest.xml  
+   creating: android/app/src/main/res/
+   creating: android/app/src/main/res/mipmap-xhdpi/
+  inflating: android/app/src/main/res/mipmap-xhdpi/ic_launcher.png  
+   creating: android/app/src/main/res/mipmap-xxxhdpi/
+  inflating: android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png  
+   creating: android/app/src/main/res/mipmap-hdpi/
+  inflating: android/app/src/main/res/mipmap-hdpi/ic_launcher.png  
+   creating: android/app/src/main/res/values-night/
+  inflating: android/app/src/main/res/values-night/styles.xml  
+   creating: android/app/src/main/res/mipmap-xxhdpi/
+  inflating: android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png  
+   creating: android/app/src/main/res/drawable/
+  inflating: android/app/src/main/res/drawable/launch_background.xml  
+   creating: android/app/src/main/res/mipmap-mdpi/
+  inflating: android/app/src/main/res/mipmap-mdpi/ic_launcher.png  
+   creating: android/app/src/main/res/drawable-v21/
+  inflating: android/app/src/main/res/drawable-v21/launch_background.xml  
+   creating: android/app/src/main/res/values/
+  inflating: android/app/src/main/res/values/styles.xml  
+   creating: android/app/src/main/kotlin/
+   creating: android/app/src/main/kotlin/com/
+   creating: android/app/src/main/kotlin/com/ethioshop/
+   creating: android/app/src/main/kotlin/com/ethioshop/ethioshop_merged/
+  inflating: android/app/src/main/kotlin/com/ethioshop/ethioshop_merged/MainActivity.kt  
+   creating: android/app/src/main/kotlin/com/ethioshop/app/
+  inflating: android/app/src/main/kotlin/com/ethioshop/app/MainActivity.kt  
+   creating: android/app/src/main/java/
+   creating: android/app/src/main/java/io/
+   creating: android/app/src/main/java/io/flutter/
+   creating: android/app/src/main/java/io/flutter/plugins/
+  inflating: android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java  
+   creating: android/app/src/debug/
+  inflating: android/app/src/debug/AndroidManifest.xml  
+   creating: android/app/src/profile/
+  inflating: android/app/src/profile/AndroidManifest.xml  
+   creating: android/.gradle/
+   creating: android/.gradle/7.6.4/
+ extracting: android/.gradle/7.6.4/gc.properties  
+   creating: android/.gradle/7.6.4/dependencies-accessors/
+  inflating: android/.gradle/7.6.4/dependencies-accessors/dependencies-accessors.lock  
+ extracting: android/.gradle/7.6.4/dependencies-accessors/gc.properties  
+   creating: android/.gradle/7.6.4/checksums/
+  inflating: android/.gradle/7.6.4/checksums/sha1-checksums.bin  
+  inflating: android/.gradle/7.6.4/checksums/checksums.lock  
+  inflating: android/.gradle/7.6.4/checksums/md5-checksums.bin  
+   creating: android/.gradle/7.6.4/vcsMetadata/
+   creating: android/.gradle/7.6.4/fileHashes/
+  inflating: android/.gradle/7.6.4/fileHashes/fileHashes.lock  
+  inflating: android/.gradle/7.6.4/fileHashes/fileHashes.bin  
+   creating: android/.gradle/7.6.4/fileChanges/
+  inflating: android/.gradle/7.6.4/fileChanges/last-build.bin  
+   creating: android/.gradle/buildOutputCleanup/
+  inflating: android/.gradle/buildOutputCleanup/cache.properties  
+  inflating: android/.gradle/buildOutputCleanup/buildOutputCleanup.lock  
+  inflating: android/.gradle/buildOutputCleanup/outputFiles.bin  
+   creating: android/.gradle/vcs-1/
+ extracting: android/.gradle/vcs-1/gc.properties  
+   creating: android/gradle/
+   creating: android/gradle/wrapper/
+  inflating: android/gradle/wrapper/gradle-wrapper.properties  
+  inflating: android/gradle/wrapper/gradle-wrapper.jar  
+  inflating: test/widget_test.dart   
+  inflating: test/test_config.dart   
+   creating: test/unit/
+   creating: test/unit/providers/
+  inflating: test/unit/providers/cart_provider_test.dart  
+   creating: test/unit/domain/
+   creating: test/unit/domain/usecases/
+   creating: test/unit/domain/repositories/
+   creating: test/unit/domain/entities/
+  inflating: test/unit/domain/entities/product_entity_test.dart  
+   creating: test/unit/data/
+   creating: test/unit/data/models/
+  inflating: test/unit/data/models/product_model_test.dart  
+   creating: test/unit/data/repositories/
+   creating: test/widget/
+   creating: test/widget/widgets/
+  inflating: test/widget/widgets/product_card_test.dart  
+   creating: test/integration/
+   creating: test/integration/screens/
+  inflating: test/integration/screens/product_list_integration_test.dart  
+  inflating: .mcp/README.md          
+   creating: .mcp/servers/
+  inflating: .mcp/servers/testing.json  
+  inflating: .mcp/servers/dart.json  
+  inflating: .mcp/servers/index.json  
+  inflating: .mcp/servers/documentation.json  
+  inflating: .mcp/servers/firebase.json  
+  inflating: .mcp/servers/search.json  
+  inflating: .mcp/servers/git.json   
+  inflating: .mcp/servers/filesystem.json  
+   creating: assets/icons/
+  inflating: assets/icons/.gitkeep   
+  inflating: assets/icons/app_icon.png  
+  inflating: assets/icons/google.png  
+  inflating: assets/icons/facebook.png  
+   creating: assets/fonts/
+  inflating: assets/fonts/.gitkeep   
+  inflating: assets/fonts/Roboto-Bold.ttf  
+  inflating: assets/fonts/NotoSansEthiopic-Bold.ttf  
+  inflating: assets/fonts/Roboto-Medium.ttf  
+  inflating: assets/fonts/NotoSansEthiopic-Regular.ttf  
+  inflating: assets/fonts/Roboto-Regular.ttf  
+   creating: assets/images/
+  inflating: assets/images/.gitkeep  
+  inflating: assets/images/logo.png  
+  inflating: assets/images/ethiopian_flag.png  
+  inflating: assets/images/chapa.png  
+  inflating: assets/images/splash.png  
+  inflating: assets/images/placeholder.png  
+  inflating: web/manifest.json       
+  inflating: web/index.html          
+   creating: web/screenshots/
+  inflating: web/screenshots/.gitkeep  
+   creating: web/icons/
+  inflating: web/icons/.gitkeep      
+  inflating: CONTRIBUTING.md         
+  inflating: README.md               
+  inflating: QUICK_START.md          
+  inflating: LICENSE                 
+  inflating: .gitignore              
+  inflating: .editorconfig           
+  inflating: project_structure.txt   
+  inflating: .dockerignore           
+  inflating: firestore.indexes.json  
+  inflating: .env.example            
+  inflating: .flutter-plugins-dependencies  
+  inflating: pubspec.lock            
+  inflating: analysis_options.yaml   
+  inflating: storage.rules           
+  inflating: .flutter-plugins        
+  inflating: docker-compose.yml      
+  inflating: ethioshop_merged.iml    
+  inflating: firestore.rules         
+  inflating: pubspec.yaml            
+  inflating: Dockerfile              
+  inflating: firebase.json           
+  inflating: Makefile.sh             
+total 6148
+drwxr-xr-x 11 user user    4096 Mar  8 15:49 .
+drwxr-xr-x 20 root root    4096 Mar  6 22:22 ..
+drwxr-xr-x  4 user user    4096 Feb 13 00:53 .agent_hooks
+-rwxrwx---  1 root root     546 Mar  8 06:43 .dockerignore
+-rwxrwx---  1 root root     370 Mar  8 06:43 .editorconfig
+-rwxrwx---  1 root root    1803 Mar  8 06:43 .env.example
+-rwxrwx---  1 root root    3784 Mar  8 06:43 .flutter-plugins
+-rwxrwx---  1 root root   14137 Mar  8 06:43 .flutter-plugins-dependencies
+-rwxrwx---  1 root root    2686 Mar  8 06:43 .gitignore
+drwxr-xr-x  3 root root    4096 Mar  8 15:49 .mcp
+-rwxrwx---  1 root root    5162 Mar  8 06:54 CONTRIBUTING.md
+-rwxrwx---  1 root root     843 Mar  8 06:43 Dockerfile
+-rwxrwx---  1 root root    1065 Mar  8 06:49 LICENSE
+-rwxrwx---  1 root root    4904 Mar  8 06:43 Makefile.sh
+-rwxrwx---  1 root root    5378 Mar  8 06:54 QUICK_START.md
+-rwxrwx---  1 root root   20543 Mar  8 06:54 README.md
+-rwxrwx---  1 root root    6185 Mar  8 06:43 analysis_options.yaml
+drwxr-xr-x  5 root root    4096 Mar  8 15:49 android
+drwxr-xr-x  5 root root    4096 Mar  8 15:49 assets
+-rwxrwx---  1 root root     952 Mar  8 06:43 docker-compose.yml
+-rwxrwx---  1 root root     842 Mar  8 06:43 ethioshop_merged.iml
+-rwxrwx---  1 root root    1625 Mar  8 06:43 firebase.json
+-rwxrwx---  1 root root    6638 Mar  8 06:43 firestore.indexes.json
+-rwxrwx---  1 root root    9847 Mar  8 06:43 firestore.rules
+-rw-r--r--  1 root root 6048032 Mar  8 15:49 git.zip
+drwxr-xr-x  4 root root    4096 Mar  8 15:49 image
+drwxr-xr-x  6 root root    4096 Mar  8 15:49 lib
+drwxr-xr-x  2 root root    4096 Mar  8 15:49 outputs
+-rwxrwx---  1 root root    1799 Mar  8 06:43 project_structure.txt
+-rwxrwx---  1 root root   48490 Mar  8 06:43 pubspec.lock
+-rwxrwx---  1 root root    2216 Mar  8 06:43 pubspec.yaml
+-rwxrwx---  1 root root    4166 Mar  8 06:43 storage.rules
+drwxr-xr-x  5 root root    4096 Mar  8 15:49 test
+drwxr-xr-x  4 root root    4096 Mar  8 15:49 web

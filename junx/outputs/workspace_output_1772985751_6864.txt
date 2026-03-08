@@ -1,0 +1,61 @@
+=== Android Structure ===
+android/app/src/main/res/drawable-v21/launch_background.xml
+android/app/src/main/res/values/strings.xml
+android/app/src/main/res/values/colors.xml
+android/app/src/main/res/values/styles.xml
+android/app/src/main/res/mipmap-xxhdpi/ic_launcher_background.png
+android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png
+android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+android/app/src/main/res/drawable/launch_background.xml
+android/app/src/main/res/drawable/ic_notification.xml
+android/app/src/main/res/xml/file_paths.xml
+android/app/src/main/res/mipmap-xhdpi/ic_launcher_background.png
+android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png
+android/app/src/main/res/mipmap-hdpi/ic_launcher_background.png
+android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png
+android/app/src/main/res/mipmap-mdpi/ic_launcher_background.png
+android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png
+android/app/src/main/res/values-night/styles.xml
+android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png
+android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png
+android/app/src/main/AndroidManifest.xml
+android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+android/app/src/main/kotlin/com/ethio/shop/MainActivity.kt
+
+=== Mipmap Resources ===
+android/app/src/main/res/mipmap-anydpi-v26/:
+total 16
+drwxr-xr-x  2 root root 4096 Mar  8 15:54 .
+drwxrwx--- 13 root root 4096 Mar  8 15:53 ..
+-rw-r--r--  1 root root  266 Mar  8 15:54 ic_launcher.xml
+-rw-r--r--  1 root root  266 Mar  8 15:54 ic_launcher_round.xml
+
+android/app/src/main/res/mipmap-hdpi/:
+total 32
+drwxrwx---  2 root root  4096 Mar  8 15:53 .
+drwxrwx--- 13 root root  4096 Mar  8 15:53 ..
+-rwxrwx---  1 root root  3831 Mar  8 15:53 ic_launcher.png
+-rwxr-x---  1 root root  1668 Mar  8 15:53 ic_launcher_background.png
+-rwxr-x---  1 root root 13872 Mar  8 15:53 ic_launcher_foreground.png
+
+android/app/src/main/res/mipmap-mdpi/:
+total 24
+drwxrwx---  2 root root 4096 Mar  8 15:53 .
+drwxrwx--- 13 root root 4096 Mar  8 15:53 ..
+-rwxrwx---  1 root root 2074 Mar  8 15:53 ic_launcher.png
+-rwxr-x---  1 root root  759 Mar  8 15:53 ic_launcher_background.png
+-rwxr-x---  1 root root 7503 Mar  8 15:53 ic_launcher_foreground.png
+
+android/app/src/main/res/mipmap-xhdpi/:
+total 44
+drwxrwx---  2 root root  4096 Mar  8 15:53 .
+drwxrwx--- 13 root root  4096 Mar  8 15:53 ..
+-rwxrwx---  1 root root  6196 Mar  8 15:53 ic_launcher.png
+-rwxr-x---  1 root root  2421 Mar  8 15:53 ic_launcher_background.png
+-rwxr-x---  1 root root 22183 Mar  8 15:53 ic_launcher_foreground.png

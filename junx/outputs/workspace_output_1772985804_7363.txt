@@ -1,0 +1,101 @@
+=== Final Project Structure ===
+.
+├── android
+│   ├── app
+│   │   ├── src
+│   │   ├── build.gradle
+│   │   ├── google-services.json
+│   │   └── proguard-rules.pro
+│   ├── gradle
+│   │   └── wrapper
+│   ├── build.gradle
+│   ├── ethioshop_merged_android.iml
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   └── settings.gradle
+├── assets
+│   ├── fonts
+│   │   ├── NotoSansEthiopic-Bold.ttf
+│   │   ├── NotoSansEthiopic-Regular.ttf
+│   │   ├── Roboto-Bold.ttf
+│   │   ├── Roboto-Medium.ttf
+│   │   └── Roboto-Regular.ttf
+│   ├── icons
+│   │   ├── app_icon.png
+│   │   ├── facebook.png
+│   │   └── google.png
+│   └── images
+│       ├── chapa.png
+│       ├── ethiopian_flag.png
+│       ├── logo.png
+│       ├── placeholder.png
+│       └── splash.png
+├── image
+│   ├── adaptive_icons
+│   │   ├── ic_launcher.xml
+│   │   ├── ic_launcher_background_hdpi.png
+│   │   ├── ic_launcher_background_mdpi.png
+│   │   ├── ic_launcher_background_xhdpi.png
+│   │   ├── ic_launcher_background_xxhdpi.png
+│   │   ├── ic_launcher_background_xxxhdpi.png
+│   │   ├── ic_launcher_foreground_hdpi.png
+│   │   ├── ic_launcher_foreground_mdpi.png
+│   │   ├── ic_launcher_foreground_xhdpi.png
+│   │   ├── ic_launcher_foreground_xxhdpi.png
+│   │   └── ic_launcher_foreground_xxxhdpi.png
+│   ├── launcher_icons
+│   │   ├── ic_launcher_hdpi.png
+│   │   ├── ic_launcher_mdpi.png
+│   │   ├── ic_launcher_play.png
+│   │   ├── ic_launcher_xhdpi.png
+│   │   ├── ic_launcher_xxhdpi.png
+│   │   └── ic_launcher_xxxhdpi.png
+│   └── logo.png
+├── lib
+│   ├── core
+│   │   ├── config
+│   │   ├── constants
+│   │   ├── error
+│   │   ├── router
+│   │   └── theme
+│   ├── data
+│   │   ├── datasources
+│   │   ├── models
+│   │   └── repositories
+│   ├── domain
+│   │   ├── entities
+│   │   ├── failures
+│   │   ├── repositories
+│   │   └── usecases
+│   ├── presentation
+│   │   ├── providers
+│   │   ├── screens
+│   │   └── widgets
+│   ├── firebase_options.dart
+│   └── main.dart
+├── outputs
+│   ├── workspace_output_1772984954_7252.txt
+│   ├── workspace_output_1772984958_3777.txt
+│   ├── workspace_output_1772984965_3406.txt
+│   ├── workspace_output_1772984992_7943.txt
+│   ├── workspace_output_1772985003_1930.txt
+│   ├── workspace_output_1772985007_742.txt
+│   ├── workspace_output_1772985019_8826.txt
+│   ├── workspace_output_1772985025_7473.txt
+│   ├── workspace_output_1772985029_278.txt
+│   ├── workspace_output_1772985032_8512.txt
+│   ├── workspace_output_1772985037_8244.txt
+│   ├── workspace_output_1772985205_3716.txt
+│   ├── workspace_output_1772985214_6627.txt
+│   ├── workspace_output_1772985222_7792.txt
+│   ├── workspace_output_1772985231_1332.txt
+│   ├── workspace_output_1772985236_2638.txt
+│   ├── workspace_output_1772985308_8972.txt
+│   ├── workspace_output_1772985375_6115.txt
+│   ├── workspace_output_1772985390_3986.txt
+│   ├── workspace_output_1772985589_3730.txt
+│   ├── workspace_output_1772985618_6444.txt
+│   ├── workspace_output_1772985624_6609.txt
+│   ├── workspace_output_1772985700_4693.txt

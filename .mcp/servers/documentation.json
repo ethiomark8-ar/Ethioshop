@@ -10,7 +10,7 @@
     "-y",
     "@modelcontextprotocol/server-documentation",
     "--project",
-    "/workspace/ethioshop_merged"
+    "."
   ],
   "capabilities": [
     "read_documentation",
@@ -27,7 +27,7 @@
     "extract_contributing_guidelines"
   ],
   "settings": {
-    "projectPath": "/workspace/ethioshop_merged",
+    "projectPath": ".",
     "documentationFiles": [
       "README.md",
       "CONTRIBUTING.md",
