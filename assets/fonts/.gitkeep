@@ -1,0 +1,12 @@
+# Placeholder for fonts directory
+# Add your custom fonts here
+# Supported formats: TTF, OTF
+#
+# Examples:
+# - Roboto-Regular.ttf
+# - Roboto-Medium.ttf
+# - Roboto-Bold.ttf
+# - NotoSansEthiopic-Regular.ttf
+# - NotoSansEthiopic-Bold.ttf
+#
+# Note: Make sure to add fonts to pubspec.yaml under flutter > fonts section

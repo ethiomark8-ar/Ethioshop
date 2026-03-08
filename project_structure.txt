@@ -1,0 +1,65 @@
+.
+├── assets
+│   ├── fonts
+│   ├── icons
+│   └── images
+├── lib
+│   ├── core
+│   │   ├── config
+│   │   ├── constants
+│   │   ├── error
+│   │   ├── router
+│   │   └── theme
+│   ├── data
+│   │   ├── datasources
+│   │   ├── models
+│   │   └── repositories
+│   ├── domain
+│   │   ├── entities
+│   │   ├── failures
+│   │   ├── repositories
+│   │   └── usecases
+│   ├── presentation
+│   │   ├── providers
+│   │   ├── screens
+│   │   └── widgets
+│   ├── firebase_options.dart
+│   └── main.dart
+├── test
+│   ├── integration
+│   │   └── screens
+│   ├── unit
+│   │   ├── data
+│   │   ├── domain
+│   │   └── providers
+│   ├── widget
+│   │   └── widgets
+│   └── test_config.dart
+├── web
+│   ├── icons
+│   ├── screenshots
+│   ├── index.html
+│   └── manifest.json
+├── CHANGELOG.md
+├── CODEOWNERS
+├── CONTRIBUTING.md
+├── Dockerfile
+├── FINAL_PROJECT_SUMMARY.md
+├── IMPLEMENTATION_SUMMARY.md
+├── LICENSE
+├── MERGED_PROJECT_SUMMARY.md
+├── Makefile
+├── PROJECT_STATUS.md
+├── QUICK_START.md
+├── README.md
+├── SECURITY.md
+├── SETUP_GUIDE.md
+├── VERIFICATION_CHECKLIST.md
+├── analysis_options.yaml
+├── docker-compose.yml
+├── flake.nix
+├── nginx.conf
+├── project_structure.txt
+└── pubspec.yaml
+
+37 directories, 26 files

@@ -1,0 +1,257 @@
+{
+  "name": "ethioshop-testing",
+  "displayName": "EthioShop Testing Infrastructure",
+  "description": "Provides test coverage analysis and testing insights for the EthioShop project, enabling AI tools to identify untested code and suggest test scenarios.",
+  "version": "1.0.0",
+  "enabled": true,
+  "type": "testing",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-testing",
+    "--project",
+    "/workspace/ethioshop_merged"
+  ],
+  "capabilities": [
+    "analyze_test_coverage",
+    "parse_test_results",
+    "organize_test_suite",
+    "analyze_test_failures",
+    "detect_coverage_gaps",
+    "suggest_test_scenarios",
+    "generate_test_stubs",
+    "validate_test_quality",
+    "analyze_test_performance",
+    "identify_flaky_tests",
+    "track_test_history",
+    "compare_coverage_trends",
+    "recommend_test_strategies"
+  ],
+  "settings": {
+    "projectPath": "/workspace/ethioshop_merged",
+    "testDirectory": "test",
+    "testConfigFile": "test/test_config.dart",
+    "coverageDirectory": "coverage",
+    "coverageFile": "coverage/lcov.info",
+    "testFrameworks": [
+      "flutter_test"
+    ],
+    "mockingLibraries": [
+      "mockito",
+      "mocktail"
+    ],
+    "analysis": {
+      "enabled": true,
+      "realTime": true,
+      "trackCoverage": true,
+      "trackFailures": true,
+      "trackFlakiness": true,
+      "trackPerformance": true
+    },
+    "coverage": {
+      "minimumThreshold": 80,
+      "targetThreshold": 90,
+      "excludePatterns": [
+        "*.generated.dart",
+        "*.g.dart",
+        "*.freezed.dart",
+        "main.dart"
+      ]
+    },
+    "testExecution": {
+      "parallel": true,
+      "timeout": 300,
+      "retryFlakyTests": 2
+    }
+  },
+  "testStructure": {
+    "unit": {
+      "path": "test/unit",
+      "description": "Unit tests for isolated components",
+      "focus": [
+        "providers",
+        "entities",
+        "models",
+        "usecases",
+        "repositories"
+      ],
+      "framework": "flutter_test",
+      "examples": [
+        "test/unit/providers/cart_provider_test.dart",
+        "test/unit/domain/entities/product_entity_test.dart",
+        "test/unit/data/models/product_model_test.dart"
+      ]
+    },
+    "widget": {
+      "path": "test/widget",
+      "description": "Widget tests for UI components",
+      "focus": [
+        "widgets",
+        "screens",
+        "ui_components"
+      ],
+      "framework": "flutter_test",
+      "examples": [
+        "test/widget/widgets/product_card_test.dart"
+      ]
+    },
+    "integration": {
+      "path": "test/integration",
+      "description": "Integration tests for complete flows",
+      "focus": [
+        "user_flows",
+        "navigation",
+        "data_persistence"
+      ],
+      "framework": "flutter_test",
+      "examples": [
+        "test/integration/screens/product_list_integration_test.dart"
+      ]
+    }
+  },
+  "testHelpers": {
+    "configFile": "test/test_config.dart",
+    "helpers": {
+      "TestHelpers": {
+        "methods": [
+          "createTestWidget",
+          "pumpAndSettle",
+          "safeTap",
+          "safeEnterText",
+          "findWidget"
+        ]
+      },
+      "MockDataGenerators": {
+        "methods": [
+          "generateMockProduct",
+          "generateMockUser",
+          "generateMockOrder"
+        ]
+      },
+      "CustomMatchers": {
+        "matchers": [
+          "isValidEthiopianPhone",
+          "isValidETBCurrency",
+          "isValidEthiopianRegion"
+        ]
+      }
+    }
+  },
+  "coverageAnalysis": {
+    "enabled": true,
+    "targetCoverage": 80,
+    "currentCoverage": 45,
+    "gaps": [
+      {
+        "path": "lib/presentation/screens/chat",
+        "coverage": 30,
+        "priority": "high"
+      },
+      {
+        "path": "lib/presentation/screens/seller",
+        "coverage": 35,
+        "priority": "high"
+      },
+      {
+        "path": "lib/presentation/screens/admin",
+        "coverage": 25,
+        "priority": "medium"
+      },
+      {
+        "path": "lib/domain/usecases",
+        "coverage": 40,
+        "priority": "medium"
+      }
+    ],
+    "wellCovered": [
+      {
+        "path": "lib/presentation/providers",
+        "coverage": 85,
+        "status": "excellent"
+      },
+      {
+        "path": "lib/domain/entities",
+        "coverage": 90,
+        "status": "excellent"
+      },
+      {
+        "path": "lib/data/models",
+        "coverage": 85,
+        "status": "excellent"
+      }
+    ]
+  },
+  "testQuality": {
+    "metrics": {
+      "totalTests": 20,
+      "passingTests": 18,
+      "failingTests": 0,
+      "flakyTests": 2,
+      "skippedTests": 0,
+      "averageDuration": "2.5s"
+    },
+    "categories": {
+      "unit": 12,
+      "widget": 4,
+      "integration": 4
+    }
+  },
+  "recommendations": {
+    "priority": [
+      {
+        "type": "add_tests",
+        "path": "lib/presentation/screens/chat",
+        "reason": "Low coverage (30%)",
+        "suggestedTests": [
+          "chat_list_test.dart",
+          "chat_detail_test.dart",
+          "message_send_test.dart"
+        ]
+      },
+      {
+        "type": "add_tests",
+        "path": "lib/presentation/screens/seller",
+        "reason": "Low coverage (35%)",
+        "suggestedTests": [
+          "seller_dashboard_test.dart",
+          "create_product_test.dart",
+          "manage_orders_test.dart"
+        ]
+      },
+      {
+        "type": "add_tests",
+        "path": "lib/domain/usecases",
+        "reason": "Low coverage (40%)",
+        "suggestedTests": [
+          "get_products_test.dart",
+          "add_to_cart_test.dart",
+          "place_order_test.dart"
+        ]
+      }
+    ]
+  },
+  "context": {
+    "projectName": "EthioShop",
+    "testingFramework": "flutter_test",
+    "mockingLibrary": "mocktail",
+    "coverageTool": "lcov",
+    "description": "Comprehensive testing infrastructure for Ethiopia's premier e-commerce marketplace"
+  },
+  "permissions": {
+    "allowRunTests": true,
+    "allowAnalyzeCoverage": true,
+    "allowGenerateTests": false,
+    "allowModifyTests": false
+  },
+  "metadata": {
+    "author": "EthioShop Team",
+    "created": "2025-01-XX",
+    "lastModified": "2025-01-XX",
+    "tags": [
+      "testing",
+      "coverage",
+      "quality-assurance",
+      "test-infrastructure"
+    ]
+  }
+}

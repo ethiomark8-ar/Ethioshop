@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # EthioShop Web Application
+  ethioshop-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ethioshop-web
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    networks:
+      - ethioshop-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Nginx Reverse Proxy (for future use)
+  nginx:
+    image: nginx:alpine
+    container_name: ethioshop-nginx
+    ports:
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - ethioshop-web
+    restart: unless-stopped
+    networks:
+      - ethioshop-network
+    profiles:
+      - production
+
+networks:
+  ethioshop-network:
+    driver: bridge
+
+volumes:
+  ethioshop-data:
