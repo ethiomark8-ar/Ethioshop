@@ -3,7 +3,7 @@ name: Extract and Overwrite Main Directory
 on:
   push:
     paths:
-      - 'full.zip' # Triggers only when full.zip is updated
+      - 'git.zip' # Triggers only when full.zip is updated
   workflow_dispatch: # Allows you to run this manually from the Actions tab
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
         run: |
           # -o: Overwrite existing files without prompting
           # -d .: Extract to the current (root) directory
-          unzip -o full.zip -d .
+          unzip -o git.zip -d .
           
           # Optional: Remove the zip after extraction to keep repo clean
           # rm full.zip
@@ -35,6 +35,6 @@ jobs:
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Auto-extract full.zip and update repository"
+            git commit -m "Auto-extract git.zip and update repository"
             git push
           fi
